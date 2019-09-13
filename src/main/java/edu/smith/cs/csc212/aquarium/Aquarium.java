@@ -41,7 +41,7 @@ public class Aquarium extends GFX {
 		super(WIDTH, HEIGHT);
 	}
 
-	Fish fish1 = new Fish(Color.pink,250,250); 
+	Fish fish1 = new Fish(Color.pink,250,250, true, true); 
 	int fish1X = getWidth() + 100;
 	int fish2X = getWidth() + 300;
 	int fish3x = getWidth() + 200;
@@ -52,7 +52,7 @@ public class Aquarium extends GFX {
 		g.setColor(Color.blue);
 		g.fillRect(0, 0, getWidth(), getHeight());
 		fish1.draw(g); 
-		nemo.draw(g);
+		
 		// Draw the fish!
 		DrawFish.facingLeft(g, Color.yellow, fish1X, 200);
 		// Draw the confused fish!
